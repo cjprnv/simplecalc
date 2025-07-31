@@ -7,10 +7,9 @@ public class SimpleCalculator {
 
         System.out.println("Enter an expression (like 5+3, 10-2%, 6*2, 8/4): ");
         String input = sc.nextLine();
-        input = input.replace(" ", "");  // ✅ You already have this
+        input = input.replace(" ", "");  
 
-        // 🔻 Now ADD these 2 lines below 👇
-        CalculatorLogic logic = new CalculatorLogic();  // Create object of the logic class
-        logic.calculate(input);                         // Call the calculate method
+        CalculatorLogic logic = new CalculatorLogic();  
+        logic.calculate(input);                         
     }
 }
